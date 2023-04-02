@@ -10,4 +10,6 @@ function init() {
 }
 
 window.addEventListener("load", function(event) { 
-  init();
+  init(); //do stuff
+  GSDevTools.create({animation:tl})
+});
