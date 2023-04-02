@@ -1,4 +1,4 @@
-var tl = gsap.timeline({ repeat:4, yoyo:true, defaults:{opacity:0, ease:"back"}});
+var tl = gsap.timeline({ repeat:0, defaults:{opacity:0, ease:"back"}});
 gsap.set(".rl-page-wrapper", {rotationY:15})
 function init() {
     tl.from("rl-page-wrapper", {ease:"linear", autoAlpha:0})
@@ -11,5 +11,4 @@ function init() {
 
 window.addEventListener("load", function(event) { 
   init(); //do stuff
-  GSDevTools.create({animation:tl})
 });
