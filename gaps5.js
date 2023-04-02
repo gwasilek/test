@@ -1,5 +1,5 @@
 var tl = gsap.timeline({defaults:{opacity:0, ease:"back"}});
-gsap.set(".section", {rotationY:15})
+gsap.set(".section")
 function init() {
     tl.from(".section", {ease:"linear", autoAlpha:0})
     .from(".heading-style-h1.is-one", {x:80, duration:1})
