@@ -27,13 +27,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
  $("[letters-fade-in-random]").each(function (index) {
     let tl = gsap.timeline({ paused: true });
-    tl.from($(this).find(".char"), { opacity: 0, duration: 0.05, ease: "power1.out", stagger: { amount: 0.4, from: "random" } });
+    tl.from($(this).find(".char"), { opacity: 0, duration: 0.8, ease: "power1.out", stagger: { amount: 0.4, from: "random" } });
     createScrollTrigger($(this), tl);
   });
 
   $("[letters-slide-up]").each(function (index) {
     let tl = gsap.timeline({ paused: true });
-    tl.from($(this).find(".char"), { yPercent: 100, duration: 0.2, ease: "power1.out", stagger: { amount: 0.6 } });
+    tl.from($(this).find(".char"), { yPercent: 100, duration: 0.8, ease: "power1.out", stagger: { amount: 0.6 } });
     createScrollTrigger($(this), tl);
   });
   
@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
     });
 
-    tl.from($(this).find(".word"), { opacity: 0.2, duration: 0.2, ease: "power1.out", stagger: { each: 0.4 } });
+    tl.from($(this).find(".word"), { opacity: 0.2, duration: 0.8, ease: "power1.out", stagger: { each: 0.4 } });
   });
 
   // Avoid flash of unstyled content
