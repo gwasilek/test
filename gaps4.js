@@ -1,7 +1,7 @@
 var tl = gsap.timeline({defaults:{opacity:0, ease:"back"}});
-gsap.set(".rl-page-wrapper", {rotationY:15})
+gsap.set(".section", {rotationY:15})
 function init() {
-    tl.from("rl-page-wrapper", {ease:"linear", autoAlpha:0})
+    tl.from(".section", {ease:"linear", autoAlpha:0})
     .from(".heading-style-h1.is-one", {x:80, duration:1})
     .from(".heading-style-h1.is-two", {x:-80, duration:1}, "<")
     .from(".text-size-regular", {y:30}, "-=0.2")
