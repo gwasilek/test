@@ -13,7 +13,6 @@ window.addEventListener("load", function(event) {
   init(); //do stuff
 });
 
-pageLoad();
 gsap.defaults({ duration: 1.5, ease: "power2.out" });
 
 $(".menu_link").on("mouseenter", function () {
