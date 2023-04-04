@@ -9,9 +9,9 @@ function init() {
     .from(".header_image", {height:"100%", width:"100%", ease:"power4.out", duration: 5.25, transformOrigin:"50% 50%"}, 0.1);
 }
 
-//window.addEventListener("load", function(event) { 
-  //init(); //do stuff
-//});
+window.addEventListener("load", function(event) { 
+  init(); //do stuff
+});
 
 
 // On Page Load
