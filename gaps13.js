@@ -5,7 +5,8 @@ function init() {
     .from(".heading-style-h1.is-two", {x:-80, duration:1}, "<")
     .from(".text-size-regular", {y:30}, "-=0.2")
     .from(".button-group", {y:50}, "-=0.4") 
-    .from(".cursor_dot", {scale:0, transformOrigin:"50% 50%", duration:0.8}, "-=0.5")
+    .from(".yer", {scale:0, transformOrigin:"50% 50%", duration:0.8}, "-=0.5")
+    .from(".cyrcle", {scale:0, transformOrigin:"50% 50%", duration:0.8}, "-=0.5")
 }
 
 window.addEventListener("load", function(event) { 
@@ -23,7 +24,7 @@ function pageLoad() {
     duration: 5.25,
     transformOrigin:"50% 50%"
    },
-   0.5
+   0.1
    );
 }
 pageLoad();
