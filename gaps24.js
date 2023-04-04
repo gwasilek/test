@@ -13,20 +13,6 @@ window.addEventListener("load", function(event) {
   init(); //do stuff
 });
 
-
-// On Page Load
-//function pageLoad() {
-  //let tl = gsap.timeline({ delay: 0.1 });
-  //tl.to(".header_image", {
-  // height: "100%",
-    //width: "100%",
-    //ease: "power4.out",
-    //duration: 5.25,
-    //transformOrigin:"50% 50%"
-  // },
-   //0.1
-   //);
-//}
 pageLoad();
 gsap.defaults({ duration: 1.5, ease: "power2.out" });
 
@@ -48,8 +34,6 @@ $(".menu_link").on("mouseleave", function () {
 
 
 var pages;
-
-
 // html example: https://g6jds.csb.app/range_slider.txt
 $(document).ready(function () {
     pages = 25;
