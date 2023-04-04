@@ -1,14 +1,14 @@
 
 var tl = gsap.timeline({defaults:{opacity:0, ease:"back"}});
 function init() {
-    tl.from(".main-wrapper", {ease:"linear", autoAlpha:15})
+    tl.from(".page-wrapperr", {ease:"linear", autoAlpha:15})
     .from(".heading-style-h1.is-one", {x:80, duration:1})
     .from(".heading-style-h1.is-two", {x:-80, duration:1}, "<")
     .from(".text-size-regular", {y:30}, "-=0.2")
     .from(".button-group", {y:50}, "-=0.4") 
     .from(".yer", {scale:0, transformOrigin:"50% 50%", duration:0.8}, 0)
-    .from(".yer", {scale:0, transformOrigin:"50% 50%", duration:0.8}, "<")
-    .from(".cyrcle", {scale:0, transformOrigin:"50% 50%", duration:0.8}, "<0.1")
+    .from(".script5.is-title", {scale:0, transformOrigin:"50% 50%", duration:0.8}, "<")
+
 }
 
 window.addEventListener("load", function(event) { 
