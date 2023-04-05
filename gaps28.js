@@ -33,15 +33,18 @@ $(".menu_link").on("mouseleave", function () {
 
 
   
- let tl = gsap.timeline({scrollTrigger:{
+function letterAnimation() {
+  let tl = gsap.timeline({
+    scrollTrigger: {
     trigger:".section",
     start:"top 90%",
     toggleActions:"play none none reverse",
-    animation:tl
- }})
-    let tl = gsap.timeline()
-    .from(".h2-text.gradient.is-1", {x:80, duration:1})
-    .from(".h2-text.gradient.is-2", {x:-80, duration:1}, "<") 
+    animation:tl}
+  })
+    tl.from(".h2-text.gradient.is-1", {x:80, duration:1})
+    .from(".h2-text.gradient.is-2", {x:-80, duration:1}, "<"); 
+}
+     letterAnimation();
 
 var pages;
 // html example: https://g6jds.csb.app/range_slider.txt
