@@ -40,11 +40,12 @@ function letterAnimation() {
     start:"top 90%",
     toggleActions:"play none none reverse",
     animation:tl}
-  })
+  })}
     tl.from(".h2-text.gradient.is-1", {x:80, duration:1})
     .from(".h2-text.gradient.is-2", {x:-80, duration:1}, "<"); 
-}
-     letterAnimation();
+
+
+    letterAnimation();
 
 var pages;
 // html example: https://g6jds.csb.app/range_slider.txt
