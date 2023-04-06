@@ -37,7 +37,7 @@ gsap.set(".col", {opacity:0, y:10})
 ScrollTrigger.create({
 	trigger:".quoteWrapper",
 	start:"bottom 95%",
-	onEnter: ()=> gsap.to(".quote", {opacity:1, y:60, stagger:0.2, ease:"back"})
+	onEnter: ()=> gsap.to(".quote", {opacity:1, y:0, stagger:0.2, ease:"back"})
 })
 
 ScrollTrigger.create({
