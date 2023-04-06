@@ -37,7 +37,7 @@ $(".menu_link").on("mouseleave", function () {
 
 ScrollTrigger.create({
 	trigger:".grid_wrapper, .wrapper-flex",
-	start:"bottom 50%",
+	start:"bottom 80%",
 	markers:true,
 	onEnter: ()=> gsap.to(".col", {opacity:1, y:0, stagger:0.2, ease:"back"})
 })
