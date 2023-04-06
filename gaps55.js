@@ -52,6 +52,8 @@ ScrollTrigger.create({
 	}
 })
 
+gsap.set(".col", {opacity:0, y:60})
+
 ScrollTrigger.create({
 	trigger:".email",
 	start:"bottom 95%",
