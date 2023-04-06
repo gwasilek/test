@@ -4,8 +4,8 @@ function init() {
     .from(".heading-style-h1.is-one", {x:80, duration:1})
     .from(".heading-style-h1.is-two", {x:-80, duration:1}, "<")
     .from(".text-size-regular", {y:30}, "-=0.2")
-    .from(".button-group", {y:50}, "-=0.4")
-    .from(".yerold", {scale:0, transformOrigin:"50% 50%", duration:0.8}, "-=0.4")
+    .from(".button-group", {y:50}, "-=0.2")
+    .from(".yerold", {scale:0, transformOrigin:"50% 50%", duration:0.8}, "-=0.2")
     .from(".header_image", {height:"100%", width:"100%", ease:"power4.out", duration: 5.25, transformOrigin:"50% 50%"}, 0.1);
 }
 
@@ -37,9 +37,9 @@ $(".menu_link").on("mouseleave", function () {
 
 ScrollTrigger.create({
 	trigger:".grid_wrapper, .wrapper-flex",
-	start:"bottom 80%",
+	start:"bottom 95%",
 	markers:true,
-	onEnter: ()=> gsap.to(".col", {opacity:1, y:0, stagger:0.2, ease:"back"})
+	onEnter: ()=> gsap.to(".col", {duration: 2.25, opacity:1, y:0, stagger:0.2, ease:"back"})
 })
 
 ScrollTrigger.create({
