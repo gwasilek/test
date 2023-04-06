@@ -34,6 +34,6 @@ $(".menu_link").on("mouseleave", function () {
 ScrollTrigger.create({
 	trigger:".grid_wrapper",
 	start:"bottom 95%",
-	animation:gsap.from(".quote", {opacity:0, scale:0.5}),
+	animation:gsap.from(".layout", {opacity:0, scale:0.5}),
 	toggleActions:"restart none none reverse"
 })
