@@ -38,14 +38,14 @@ $(".menu_link").on("mouseleave", function () {
 ScrollTrigger.create({
 	trigger:".grid_wrapper, .wrapper-flex",
 	start:"bottom 50%",
-	marker:"true",
+	markers:true,
 	onEnter: ()=> gsap.to(".col", {opacity:1, y:0, stagger:0.2, ease:"back"})
 })
 
 ScrollTrigger.create({
 	trigger:".grid_wrapper, .wrapper-flex",
 	start:"top 100%",
-	marker:"true",
+	markers:true,
 	onLeaveBack: ()=> {
 		console.log("onLeaveBack")
 		gsap.set(".col", {opacity:0, y:60, stagger:0.2, ease:"back"})
