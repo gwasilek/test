@@ -32,10 +32,10 @@ $(".menu_link").on("mouseleave", function () {
 });
 
 console.clear()
-gsap.set(".col", {opacity:0, scale:0.5})
+gsap.set(".col", {opacity:0, y:10})
 
 ScrollTrigger.create({
-	triggers:".layout",
+	trigger:".layout",
 	start:"top 100%",
 	onLeaveBack: ()=> {
 		console.log("onLeaveBack")
