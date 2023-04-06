@@ -31,7 +31,7 @@ $(".menu_link").on("mouseleave", function () {
   });
 });
 
-console.clear()
+
 gsap.set(".col", {opacity:0, y:0})
 
 ScrollTrigger.create({
