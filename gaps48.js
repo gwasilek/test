@@ -33,10 +33,6 @@ $(".menu_link").on("mouseleave", function () {
 
 
 
-ScrollTrigger.matchMedia({
-  
-  // desktop
-  "(min-width: 601px)": function() {
    gsap.set(".col", {opacity:0, y:0})
 
 ScrollTrigger.create({
@@ -54,20 +50,4 @@ ScrollTrigger.create({
 	}
 })
   
-  
-  }
-  
-  , 
-  
-  // small screen
-  "(max-width: 600px)": function() {
-   
 
-      
-    
-      
-})}
-  
-  
-  
-});
