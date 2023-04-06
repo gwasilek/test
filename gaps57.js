@@ -36,7 +36,7 @@ $(".menu_link").on("mouseleave", function () {
    gsap.set(".col", {opacity:0, y:60})
 
 ScrollTrigger.create({
-	trigger:".ofert, .email",
+	trigger:".ofert",
 	start:"bottom 95%",
 	markers:true,
 	onEnter: ()=> gsap.to(".col", {duration: 2.25, opacity:1, y:0, stagger:0.2, ease:"back"})
