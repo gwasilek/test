@@ -52,13 +52,13 @@ ScrollTrigger.create({
 	}
 })
 
-gsap.set(".col", {opacity:0, y:60})
+gsap.set(".col--1", {opacity:0, y:60})
 
 ScrollTrigger.create({
 	trigger:".email",
 	start:"bottom 95%",
 	markers:true,
-	onEnter: ()=> gsap.to(".col", {duration: 2.25, opacity:1, y:0, stagger:0.2, ease:"back"})
+	onEnter: ()=> gsap.to(".col--1", {duration: 2.25, opacity:1, y:0, stagger:0.2, ease:"back"})
 })
 
 ScrollTrigger.create({
@@ -67,7 +67,7 @@ ScrollTrigger.create({
 	markers:true,
 	onLeaveBack: ()=> {
 		console.log("onLeaveBack")
-		gsap.set(".col", {opacity:0, y:60, stagger:0.2, ease:"back"})
+		gsap.set(".col--1", {opacity:0, y:60, stagger:0.2, ease:"back"})
 	}
 })
   
