@@ -35,13 +35,13 @@ console.clear()
 gsap.set(".col", {opacity:0, y:0})
 
 ScrollTrigger.create({
-	trigger:".layout",
+	trigger:".grid_wrapper, .wrapper-flex",
 	start:"bottom 95%",
 	onEnter: ()=> gsap.to(".col", {opacity:1, y:0, stagger:0.2, ease:"back"})
 })
 
 ScrollTrigger.create({
-	trigger:".layout",
+	trigger:".grid_wrapper, .wrapper-flex",
 	start:"top 100%",
 	onLeaveBack: ()=> {
 		console.log("onLeaveBack")
