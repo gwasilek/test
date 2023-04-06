@@ -31,33 +31,27 @@ $(".menu_link").on("mouseleave", function () {
   });
 });
 
-const sections = gsap.utils.toArray(".section")
-//important to do this BEFORE ScrollTriggers are created
-ScrollTrigger.saveStyles(".col")
 
 
 ScrollTrigger.matchMedia({
   
   // desktop
   "(min-width: 601px)": function() {
-   sections.forEach((element, index) => {
-  let items = element.querySelectorAll(".col")
-  let tl = gsap.timeline({paused:true})
-  
-  tl.from(".col",  {opacity:0, y:60, stagger:0.2, ease:"back"}) 
-      
-  ScrollTrigger.create({
-    
-    trigger:element,
-    start:"top 50%",
-    onEnter: () => tl.play()
-    })  
-      
-  ScrollTrigger.create({
-      trigger:element,
-      start:"top 100%",
-      onLeaveBack: () => tl.pause(0)
-    })     
+   gsap.set(".col", {opacity:0, y:0})
+
+ScrollTrigger.create({
+	trigger:".grid_wrapper, .wrapper-flex",
+	start:"bottom 50%",
+	onEnter: ()=> gsap.to(".col", {opacity:1, y:0, stagger:0.2, ease:"back"})
+})
+
+ScrollTrigger.create({
+	trigger:".grid_wrapper, .wrapper-flex",
+	start:"top 100%",
+	onLeaveBack: ()=> {
+		console.log("onLeaveBack")
+		gsap.set(".col", {opacity:0, y:60, stagger:0.2, ease:"back"})
+	}
 })
   
   
