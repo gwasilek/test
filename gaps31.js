@@ -31,17 +31,9 @@ $(".menu_link").on("mouseleave", function () {
   });
 });
 
-
-  
-function letterAnimation() {
-  let tl = gsap.timeline({
-    scrollTrigger: {
-    trigger:".section",
-    start:"top 90%",
-    toggleActions:"play none none reverse",
-    animation:tl}
-  })}
-    tl.from(".h2-text.gradient.is-1", {x:80, duration:1})
-    .from(".h2-text.gradient.is-2", {x:-80, duration:1}, "<"); 
-
-    letterAnimation();
+ScrollTrigger.create({
+	trigger:".grid_wrapper",
+	start:"bottom 95%",
+	animation:gsap.from(".quote", {opacity:0, scale:0.5}),
+	toggleActions:"restart none none reverse"
+})
